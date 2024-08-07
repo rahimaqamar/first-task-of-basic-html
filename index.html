@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+	<title>Simple Webpage</title>
+	<style>
+		/* Add some basic styling */
+		body {
+			font-family: Arial, sans-serif;
+            background-color: gray;
+		}
+		nav {
+			background-color: #333;
+			color: black;
+			padding: 20px;
+			text-align: right;
+            
+		}
+		nav a {
+			color: #fff;
+			text-decoration: none;
+            margin-left: 40px;
+            
+		}
+		main {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 20px;
+
+		}
+		section {
+			background-color: #f0f0f0;
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+		table {
+			border-collapse: collapse;
+			width: 50%;
+		}
+		th, td {
+			border: 1px solid #ddd;
+			padding: 10px;
+			text-align: left;
+		}
+        #home, h2{
+            text-align: center;
+            width: 600px;
+        }
+        h2{
+            margin-top: 30px;
+        }
+        #contact{
+            height: 300px;
+            width: 350px;
+            text-align: center;
+            float: right;
+        }
+        table tr th{
+            color: #ddd;
+        }
+        .pic{
+            padding-right: 2000px;
+            margin-top: -20px;
+        }
+        .na{
+            margin-top: -40px;
+        }
+        #about{
+            text-align: center;
+            float: left;
+            width: 50%;   
+        }
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+            <div class="pic">
+                <img src="y.png" height="50px">
+            </div>
+            <div class="na">
+                <a href="#home">Home</a> 
+			<a href="#about">About</a> 
+			<a href="#Contact">intro</a>
+            <a href="#Services">Services</a>
+            </div>
+		</nav>
+	</header>
+	<main>
+		<section id="home">
+			<h1>Welcome to our webpage!</h1>
+			<p>This is the main content area.</p>	
+            <iframe width="460" height="315" src="https://www.youtube.com/embed/9VE7p-he4fA?si=hB96NDr6W9QQf2uk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+           <h2><u>Audio</u></h2>
+            <audio controls>
+                <source src="Ho-Karam-Sarkar.mp3">
+            </audio>
+        </section>
+        <hr>
+		<section id="about">
+			<h1><b><u>About us</u></b></h1>
+			<article>
+				<h2>Our mission</h2>
+				<p>Our mission is to gain experience and knowledge in the field of
+                    web development.
+                </p>
+			</article>
+		</section>
+        <hr>
+		<section id="contact">
+			<h1><u>Introduction</u></h1>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name"><br><br>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email"><br><br>
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password"><br><br>
+				<label for="gender">Gender:</label>
+				<input type="radio" id="male" name="gender" value="male">
+				<label for="male">Male</label>
+				<input type="radio" id="female" name="gender" value="female">
+				<label for="female">Female</label><br>
+				<br><input type="submit" value="Submit">
+			</form>
+		</section>
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Phone</th>
+                <th>Education</th>
+			</tr>
+			<tr>
+				<td>Rahima Qamar</td>
+				<td>rahimaqamar515@gmail.com</td>
+				<td>123-456-7890</td>
+                <td>Bs Software Engineering</td>
+			</tr>
+		</table>
+	</main>
+</body>
+</html>
